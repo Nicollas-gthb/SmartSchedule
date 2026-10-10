@@ -105,18 +105,18 @@ Este é um **projeto acadêmico de demonstração**, desenvolvido para a discipl
            │            HTTPS / REST          │
            └─────────────────┬────────────────┘
                              │
-                   ┌─────────▼────────────┐
-                   │   API Backend        │
-                   │  (Node.js/Express)   │
-                   │  - Auth (JWT)        │
-                   │  - SuggestionService │  ← ponto de extensão futuro p/ IA
-                   │  - Regras de negócio │
-                   └─────────┬────────────┘
+                   ┌─────────▼─────────────┐
+                   │   API Backend         │
+                   │  (Node.js/Express)    │
+                   │  - Auth (JWT)         │
+                   │  - SuggestionService  │  ← ponto de extensão futuro p/ IA
+                   │  - Regras de negócio  │
+                   └─────────┬─────────────┘
                              │
-                   ┌─────────▼────────────┐
-                   │   PostgreSQL         │
-                   │   (via Prisma ORM)   │
-                   └──────────────────────┘
+                   ┌─────────▼─────────────┐
+                   │   PostgreSQL          │
+                   │   (via Prisma ORM)    │
+                   └───────────────────────┘
                              │
                    ┌─────────▼─────────────┐
                    │  Serviços externos    │
