@@ -1,19 +1,12 @@
 import { useColorScheme } from "nativewind";
-import { getColor } from "@/theme";
+import { getColor, palette, type Token } from "@/theme";
 
+// Retorna TODAS as cores do tema atual em formato rgb(...), p/ ícones e props de cor.
 export function useThemeColors() {
+  const { colorScheme } = useColorScheme();
+  const scheme = colorScheme === "dark" ? "dark" : "light";
 
-    const { colorScheme } = useColorScheme()
-    const scheme = colorScheme ?? "light"
-    return (
-        {
-            foreground: getColor(scheme, "foreground"),
-            muted: getColor(scheme, "muted"),
-            primary: getColor(scheme, "primary"),
-            background: getColor(scheme, "background"),
-            surface: getColor(scheme, "surface"),
-            border: getColor(scheme, "border"),
-            danger: getColor(scheme, "danger")
-        }
-    )
+  return Object.fromEntries(
+    (Object.keys(palette[scheme]) as Token[]).map((k) => [k, getColor(scheme, k)])
+  ) as Record<Token, string>;
 }
