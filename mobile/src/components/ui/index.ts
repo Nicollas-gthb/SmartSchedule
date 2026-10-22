@@ -2,3 +2,4 @@ export { Screen } from "./Screen";
 export { Button } from "./Button";
 export { Input } from "./Input";
 export { PressableCard } from "./PressableCard"
+export { ThemeToggle } from "./ThemeToggle"
