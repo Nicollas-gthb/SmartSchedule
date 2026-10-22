@@ -24,16 +24,6 @@ export default function Home() {
                     description="Encontre a agencia mais próxima de voce"
                 />
 
-
-
-                
-
-                {/* <PressableCard>
-                    <MapPin />
-                    <ChevronRight />
-                    <Text>Agencias</Text>
-                    <Text>Encontre a agencia mais próxima de voce</Text>
-                </PressableCard> */}
             </View>
             
         </Screen>
