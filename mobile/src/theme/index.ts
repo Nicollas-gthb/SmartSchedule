@@ -11,7 +11,7 @@ export const palette = {
         danger: "220 38 38",
     },
     dark: {
-        background: "15 23 42",
+        background: "15 23 42", 
         surface: "30 41 59",
         border: "51 65 85",
         foreground: "241 245 249",

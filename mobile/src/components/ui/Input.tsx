@@ -26,7 +26,7 @@ export function Input({ label, error, password = false, ...rest }: Props) {
                 className={`h-12 flex-row items-center rounded-xl border bg-surface px-3 ${borderColor}`}
             >
                 <TextInput
-                    className="flex-1 text-base text-gray-900"
+                    className="flex-1 text-base text-foreground"
                     placeholderTextColor="#9CA3AF"
                     secureTextEntry={hidden}
                     autoCapitalize="none"

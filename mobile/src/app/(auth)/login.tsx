@@ -62,8 +62,9 @@ export default function Login() {
 
             <View className="mt-6 flex-row justify-center">
                 <Text className="text-muted">Ainda não tem conta? </Text>
-                <Link href="/cadastro" className="font-semibold text-primary">
-                    Cadastre-se
+                <Link href="/cadastro" className="font-semibold">
+                    
+                    <Text className="text-primary">Cadastre-se</Text>
                 </Link>
             </View>
         </Screen>

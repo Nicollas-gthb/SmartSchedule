@@ -15,9 +15,10 @@ export function Screen({ headerTitle = null, children, className = "" }: Props) 
                 className="flex-1"
                 behavior={Platform.OS === "ios" ? "padding" : undefined}
             >
+                
                 {headerTitle ? (
                     <View className="border-b-2 border-border mb-8 px-6 py-3">
-                        <Text className="text-2xl font-bold">
+                        <Text className="text-2xl font-bold text-foreground">
                             {headerTitle}
                         </Text>
                     </View>
