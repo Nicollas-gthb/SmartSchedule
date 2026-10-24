@@ -3,15 +3,15 @@ import { CalendarDays, House, MapPin, Menu } from "lucide-react-native";
 import { useThemeColors } from "@/hooks/useThemeColors";
 
 export default function TabsLayout() {
-  const c = useThemeColors();
+  const color = useThemeColors();
 
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: c.primary,
-        tabBarInactiveTintColor: c.muted,
-        tabBarStyle: { backgroundColor: c.surface, borderTopColor: c.border },
+        tabBarActiveTintColor: color.primary,
+        tabBarInactiveTintColor: color.muted,
+        tabBarStyle: { backgroundColor: color.surface, borderTopColor: color.border },
         tabBarLabelStyle: { fontSize: 11 },
       }}
     >
